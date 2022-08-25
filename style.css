@@ -28,7 +28,7 @@ body {
     line-height: 30px;
     text-decoration: none;
     font-weight: 500;
-    text-transform: uppercase;
+
     color: #4A4A4A;
     padding-left: 30px;
     margin: auto;
@@ -40,4 +40,46 @@ body {
 
 nav {
     margin: 20px 100px 0 40px;
+}
+
+/* hero section */
+#hero {
+    margin-top: 80px;
+}
+
+#hero-headers-container {}
+
+#hero-image-container {}
+
+#hero-image {
+    width: 100%;
+}
+
+#hero-headers-container h2 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    color: #3C1D82;
+}
+
+#hero-headers-container h1 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 126%;
+    color: #4A4A4A;
+    margin-top: 20px;
+}
+
+#hero-headers-container p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3C1D82;
+
 }
