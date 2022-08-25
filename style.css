@@ -39,21 +39,26 @@ body {
 }
 
 nav {
-    margin: 20px 100px 0 40px;
+    margin: 20px 50px 0 40px;
 }
 
 /* hero section */
 #hero {
     margin-top: 80px;
+    margin-bottom: 100px;
 }
 
-#hero-headers-container {}
+#hero-headers-container {
+    margin-top: 30px;
+}
 
 #hero-image-container {}
 
 #hero-image {
     width: 100%;
 }
+
+
 
 #hero-headers-container h2 {
     font-family: 'Poppins', sans-serif;
@@ -83,3 +88,41 @@ nav {
     color: #3C1D82;
 
 }
+
+/* about section */
+#about {
+    height: 600px;
+    background: rgba(224, 243, 255, 0.53);
+
+}
+
+#about-text-container h2 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 150.5%;
+    color: #4A4A4A;
+}
+
+#about-text-container p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #6D6D6D;
+}
+
+#about-text-container h5 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #3C1D82;
+    width: 384px
+}
+
+
+#about-icons-container {}
