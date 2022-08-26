@@ -45,7 +45,7 @@ nav {
 /* hero section */
 #hero {
     margin-top: 80px;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 
 #hero-headers-container {
@@ -93,6 +93,7 @@ nav {
 #about {
     height: 600px;
     background: rgba(224, 243, 255, 0.53);
+    padding: 50px 50px;
 
 }
 
@@ -125,4 +126,26 @@ nav {
 }
 
 
-#about-icons-container {}
+#about-text-container {
+    padding: 0 80px;
+}
+
+#about-text-container hr {
+    color: #3C1D82;
+    width: 64px;
+    height: 5px;
+    background-color: #3C1D82;
+    opacity: 1;
+}
+
+#about-text-container h2 {
+    margin-top: 60px;
+}
+
+#about-text-container p {
+    margin-top: 40px;
+}
+
+#about-text-container h5 {
+    margin-top: 30px;
+}
