@@ -6,18 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="wb:op" content="2875f5be80f8231cf1af9a5e877de4d3" />
-    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <script src="https://kit.fontawesome.com/4c414eafd1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Martin McInerney - Full Stack Software Engineer</title>
 </head>
 
 <body>
     <nav id="navbar" class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <p id="navbar-brand">Martin.</p>
+            <p id="navbar-brand">MM.</p>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -33,9 +34,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Portfolio</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Blog</a>
-                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link disabled">Contact</a>
                     </li>
@@ -43,7 +42,7 @@
             </div>
         </div>
     </nav>
-    <section id="hero" class="container">
+    <section id="hero" class="container-fluid">
         <div class="row">
             <div id="hero-headers-container" class="col-md-6">
                 <h2>Martin McInerney -</h2>
@@ -133,7 +132,7 @@
                 <p></p>
             </div>
             <div class="col-md-6">
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN" onsubmit="return sendEmail(this);">
 
                     <!-- Name input -->
                     <div class="mb-3">
@@ -174,7 +173,8 @@
 
                     <!-- Form submit button -->
                     <div class="d-grid">
-                        <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Send
+                        <button class="btn btn-primary btn-lg" id="submitButton" onclick="return sendEmail(this);"
+                            type="submit">Send
                             message</button>
                     </div>
 
@@ -188,10 +188,18 @@
 
 
     </section>
-    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
     </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("gvpUmDPU-6ksGZrp8");
+        })();
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 
 </body>
 
